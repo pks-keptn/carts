@@ -8,7 +8,10 @@
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
         "aggregation": "AVG",
         "startTimestamp": "",
-        "endTimestamp": ""
+        "endTimestamp": "",
+        "tags": [
+          "environment:sockshop-staging"
+        ]
       },
       "grading": {
         "type": "Threshold",
@@ -26,7 +29,10 @@
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
         "aggregation": "p90",
         "startTimestamp": "",
-        "endTimestamp": ""
+        "endTimestamp": "",
+        "tags": [
+          "environment:sockshop-staging"
+        ]
       },
       "grading": {
         "type": "Threshold",
