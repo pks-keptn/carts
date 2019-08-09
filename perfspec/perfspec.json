@@ -2,7 +2,7 @@
   "spec_version": "1.0",
   "indicators": [
     {
-      "id": "ResponseTime_Backend",
+      "id": "AVG_ResponseTime_Backend",
       "source": "Dynatrace",
       "query": {
         "timeseriesId": "com.dynatrace.builtin:service.responsetime",
@@ -17,6 +17,24 @@
           "upperWarning": 800000
         },
         "metricScore": 100
+      }
+    },
+    {
+      "id": "P90_ResponseTime_Backend",
+      "source": "Dynatrace",
+      "query": {
+        "timeseriesId": "com.dynatrace.builtin:service.responsetime",
+        "aggregation": "p90",
+        "startTimestamp": "",
+        "endTimestamp": ""
+      },
+      "grading": {
+        "type": "Threshold",
+        "thresholds": {
+          "upperSevere": 1000000,
+          "upperWarning": 800000
+        },
+        "metricScore": 80
       }
     }
   ],
